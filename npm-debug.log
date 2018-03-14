@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.9
+3 info using node@v7.1.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle react-starter@1.0.0~prestart: react-starter@1.0.0
+6 silly lifecycle react-starter@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle react-starter@1.0.0~start: react-starter@1.0.0
+8 verbose lifecycle react-starter@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle react-starter@1.0.0~start: PATH: D:\nodejs\node_modules\npm\bin\node-gyp-bin;D:\nodejs\files\react-starter\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\tools\ruby23\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Users\liliz\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;D:\MATLAB\R2017a\bin;D:\nodejs\;C:\Program Files\Git\cmd;D:\Python27\Scripts\;D:\Java\jdk1.8.0_111\bin\;D:\python3.5.2\;C:\Users\liliz\AppData\Local\Arduino15\packages\Andino\tools\nds32le-elf-mculib-v3m\4.0.3\cygwin\bin\;D:\MiKTeX 2.9\miktex\bin\x64\;D:\CTEX\UserData\miktex\bin;D:\CTEX\MiKTeX\miktex\bin;D:\CTEX\CTeX\ctex\bin;D:\CTEX\CTeX\cct\bin;D:\CTEX\CTeX\ty\bin;D:\CTEX\Ghostscript\gs9.05\bin;D:\CTEX\GSview\gsview;D:\CTEX\WinEdt;D:\DevelopTool\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;D:\wamp64\bin\php\php5.6.25;D:\DevelopTool\apache-ant-1.9.10\bin;D:\DevelopTool\jboss-as-7.1.0.Final\bin;D:\Java\jdk1.8.0_111\jre\bin;D:\Anaconda3;D:\Anaconda3\Scripts;D:\Anaconda3\Library\bin;C:\Users\liliz\AppData\Roaming\npm;C:\Users\liliz\AppData\Local\Microsoft\WindowsApps;C:\Users\liliz\AppData\Local\atom\bin;D:\python3.5.2;C:\Users\liliz\AppData\Local\Arduino15\packages\Andino\tools\nds32le-elf-mculib-v3m\4.0.3\cygwin\bin;D:\iverilog\bin;D:\wamp64\bin\mysql\mysql5.7.14\bin;D:\wamp64\bin\php\php5.6.25;C:\Users\liliz\AppData\Local\GitHubDesktop\bin
+10 verbose lifecycle react-starter@1.0.0~start: CWD: D:\nodejs\files\react-starter
+11 silly lifecycle react-starter@1.0.0~start: Args: [ '/d /s /c',
+11 silly lifecycle   'webpack-dev-server --config config/webpack.dev.js --mode development --open' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at process.kill (internal/process.js:173:13)
+12 verbose stack     at process.listener (D:\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (D:\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:200:44)
+13 verbose cwd D:\nodejs\files\react-starter
+14 error Windows_NT 10.0.16299
+15 error argv "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v7.1.0
+17 error npm  v3.10.9
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

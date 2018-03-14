@@ -1,0 +1,5 @@
+{
+  "Pages": "app/pages/",
+  "Components": "app/components/",
+  "Data":"app/data/"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "React Project Starter",
+  "scripts": {
+    "build:dev": "webpack --config config/webpack.dev.js --mode development",
+    "watch:dev": "webpack --config config/webpack.dev.js --mode development --watch",
+    "build:prod": "webpack --config config/webpack.prod.js --mode production",
+    "watch:prod": "webpack --config config/webpack.prod.js --mode production --watch",
+    "start": "webpack-dev-server --config config/webpack.dev.js --mode development --open"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "base-href-webpack-plugin": "^1.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.8.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  }
+}
