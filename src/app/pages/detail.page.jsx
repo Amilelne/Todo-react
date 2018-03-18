@@ -8,7 +8,6 @@ export class DetailPage extends Component {
         super(props);
         var listItem = todoList[this.props.match.params.id];
         this.state = {
-            id:listItem.id,
             name:listItem.name,
             description:listItem.description,
             startAt:listItem.startAt,

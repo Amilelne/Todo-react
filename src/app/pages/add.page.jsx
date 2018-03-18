@@ -7,9 +7,7 @@ import { todo } from 'Data/items.data'
 export class AddPage extends Component {
     constructor(){
         super();
-        let id = todoList.length;
         this.state = {
-            id:id+1,
             text:'',
             desc:''
         };
@@ -20,14 +18,12 @@ export class AddPage extends Component {
             return;
         }
         const newItem = {
-            id:this.state.id,
             name:this.state.text,
             description:this.state.desc,
             startAt:Date.now(),
             endAt:Date.now()
         };
         todo.addTodo(newItem);
-        console.log(newItem);
         this.setState({
             text:'',
             desc:''
