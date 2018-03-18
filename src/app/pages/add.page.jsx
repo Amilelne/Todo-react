@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 import { TitleComponent } from 'Components/title.component';
 import {todoList,addTodo } from 'Data/items.data';
+import {Todo} from 'Pages/home.page';
 
 export class AddPage extends Component {
     constructor(){
         super();
-        var id = todoList.length;
+        let id = todoList.length;
         this.state = {
             id:id+1,
             text:'',
@@ -35,7 +36,7 @@ export class AddPage extends Component {
             startAt:Date.now(),
             endAt:Date.now()
         };
-        addTodo(newItem);
+        Todo.addTodo(newItem);
         console.log(newItem);
         this.setState({
             text:'',
