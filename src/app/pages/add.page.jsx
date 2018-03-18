@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { TitleComponent } from 'Components/title.component';
 import {todoList,addTodo } from 'Data/items.data';
-import {Todo} from 'Pages/home.page';
+import { todo } from 'Data/items.data'
 
 export class AddPage extends Component {
     constructor(){
@@ -13,16 +13,6 @@ export class AddPage extends Component {
             text:'',
             desc:''
         };
-        console.log(id);
-        this.handleTextChange = this.handleTextChange.bind(this);
-        this.handleDescChange = this.handleDescChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    handleTextChange(e){
-        this.setState({text:e.target.value});
-    }
-    handleDescChange(e){
-        this.setState({desc:e.target.value});
     }
     handleSubmit(e){
         e.preventDefault();
@@ -36,7 +26,7 @@ export class AddPage extends Component {
             startAt:Date.now(),
             endAt:Date.now()
         };
-        Todo.addTodo(newItem);
+        todo.addTodo(newItem);
         console.log(newItem);
         this.setState({
             text:'',
@@ -50,13 +40,13 @@ export class AddPage extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <p>name:</p>
                     <input
-                        onChange = {this.handleTextChange}
+                        onChange = {e => this.setState({text:e.target.value})}
                         value = {this.state.text}
                     />
                     <br/>
                     <p>description:</p>
                     <input
-                        onChange = {this.handleDescChange}
+                        onChange = {e => this.setState({desc:e.target.value})}
                         value = {this.state.desc}
                     />
                     <br/>

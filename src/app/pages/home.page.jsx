@@ -1,27 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import { TitleComponent } from 'Components/title.component';
-
-const Event = require('events');
-
-export class Todo extends Event{
-    constructor(){
-        super();
-        this.todoList = [];
-        this.addTodo = this.addTodo.bind(this);
-        this.deleteTodo = this.deleteTodo.bind(this);
-    }
-
-    addTodo(todo){
-        this.todoList.push(todo);
-        this.emit('update');
-    }
-    deleteTodo(todo){
-        delete this.todoList[todo];
-        this.emit('update');
-    }
-}
-const todo = new Todo();
+import { todo } from 'Data/items.data'
 
 export class HomePage extends Component {
     constructor(){
